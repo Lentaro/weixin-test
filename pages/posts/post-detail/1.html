@@ -1,0 +1,12 @@
+<html>
+<script>
+    let req = new XMLHttpRequest();
+    req.onreadystatechange = function () {
+        if(req.status===200){
+            return success(req.responseText)
+        }
+    }
+    req.open('get','https://api.douban.com/v2/book/1220562')
+    req.send()
+</script>
+</html>
